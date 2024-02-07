@@ -1,3 +1,94 @@
+:root {
+    --var-background-color: #111111;
+}
+
 body {
-    background-color: red;
+    font-size: 16px;
+    background-color: #111111;
+    color: white;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: white;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 105%;
+    text-align: center;
+    font-family: "Baloo 2", sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+}
+
+
+.buttoncontainer>a {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    padding: 0.6em 1.5em 0.6em 1.5em;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+section.hero>img, section.duizendpoot>img {
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.hero, section.duizendpoot {
+    max-width: 80%;
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    border-radius: 36px;
+}
+
+section.duizendpoot>h2 {
+    margin: 0;
+}
+
+header ul {
+    display: flex;
+    gap: 1em;
+}
+
+section.hero {
+    margin-bottom: 1em;
+}
+
+p.socials {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+p.socials>a {
+    width: 22px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6em;
+    padding: 0.6em 1.5em 0.6em 1.5em;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    border-radius: 4em;
+    aspect-ratio: 1/1;
+    background-color: rgba(255, 255, 255, 0.12);
 }
