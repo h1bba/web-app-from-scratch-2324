@@ -60,5 +60,3 @@ for (let tool of data) {
 
 // TUTORIAL voor de logica: https://www.youtube.com/watch?v=f4D50VnO_Gw&t=609s
 
-// RIJKSMUSEUM
-const rijksmuseumAPI = "https://www.rijkmuseum.nl/api/public/collection/items?key=12345&format=json";
