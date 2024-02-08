@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "name": "Ufuk",
+    "age": 20,
+    "stad": "Amsterdam",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/ufukargun/",
+      "discord": "https://discord.com/users/165559318639411200",
+      "github": "https://github.com/h1bba"
+    }
+  }
+]

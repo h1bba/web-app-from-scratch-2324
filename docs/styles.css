@@ -51,7 +51,7 @@ section.hero>img, section.duizendpoot>img {
     text-align: center;
 }
 
-section.hero, section.duizendpoot {
+section.hero, section.duizendpoot, section.quotecontainer {
     max-width: 80%;
     margin: auto;
     padding: 2em;
@@ -60,7 +60,7 @@ section.hero, section.duizendpoot {
     border-radius: 36px;
 }
 
-section.duizendpoot>h2 {
+section.duizendpoot h2 {
     margin: 0;
 }
 
@@ -69,8 +69,17 @@ header ul {
     gap: 1em;
 }
 
-section.hero {
+section.hero, section.duizendpoot, section.quotecontainer {
     margin-bottom: 1em;
+}
+
+section.quotecontainer>img {
+    width: 12rem;
+}
+
+section.quotecontainer>p {
+    font-size: 32px;
+    margin: 1em 0em 0em 0em;
 }
 
 p.socials {
@@ -91,4 +100,8 @@ p.socials>a {
     border-radius: 4em;
     aspect-ratio: 1/1;
     background-color: rgba(255, 255, 255, 0.12);
+}
+
+section.duizendpoot h2 {
+    font-size: 24px;
 }
