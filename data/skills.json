@@ -1,0 +1,26 @@
+[
+  {
+    "skill": "Figma",
+    "img": "https://i.ibb.co/HzjNWV6/Figma.png"
+  },
+  {
+    "skill": "JavaScript",
+    "img": "https://i.ibb.co/4tDZ8wG/Java-Script-logo.png"
+  },
+  {
+    "skill": "CSS",
+    "img": "https://i.ibb.co/LJLJHkF/CSS.png"
+  },
+  {
+    "skill": "HTML",
+    "img": "https://i.ibb.co/VtvrRF0/HTML.png"
+  },
+  {
+    "skill": "Wordpress",
+    "img": "https://i.ibb.co/KFc5cvg/Wordpress.png"
+  },
+  {
+    "skill": "Woocommerce",
+    "img": "https://i.ibb.co/J23s1cw/Woocommerce.png"
+  }
+]

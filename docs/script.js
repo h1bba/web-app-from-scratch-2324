@@ -12,17 +12,15 @@ fetch("/data/data.json")
   for (let users of data) {
     // console.log(users);
     const userNaam = document.createElement("h2");
-    const userAge = document.createElement('h2')
-    const userStad = document.createElement('h2')
-    userNaam.innerText = users.name
-    userAge.innerText = users.age
-    userStad.innerText = users.stad
-    usersNameEl.append(userNaam)
-    userAgeEl.append(userAge)
-    userStadEl.append(userStad)
+    const userAge = document.createElement('h2');
+    const userStad = document.createElement('h2');
+    userNaam.innerText = users.name;
+    userAge.innerText = users.age;
+    userStad.innerText = users.stad;
 
-
-
+    usersNameEl.append(userNaam);
+    userAgeEl.append(userAge);
+    userStadEl.append(userStad);
   }
 
   })
