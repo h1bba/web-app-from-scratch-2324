@@ -51,7 +51,7 @@ section.hero>img, section.duizendpoot>img {
     text-align: center;
 }
 
-section.hero, section.duizendpoot, section.quotecontainer {
+section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer {
     max-width: 80%;
     margin: auto;
     padding: 2em;
