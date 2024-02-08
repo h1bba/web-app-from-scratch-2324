@@ -51,7 +51,7 @@ section.hero>img, section.duizendpoot>img {
     text-align: center;
 }
 
-section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer {
+section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont {
     max-width: 80%;
     margin: auto;
     padding: 2em;
@@ -126,3 +126,45 @@ section.duizendpoot h2 {
     object-fit: contain;
 }
 
+input {
+    background-color: lightblue;
+    padding: 8px;
+    font-size: 18px;
+}
+
+
+section.pokedexcont>label {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 1em;
+}
+
+section.pokedexcont>button {
+    font-size: 18px;
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 1em;
+}
+
+section.pokedexcont {
+    background-color: red;
+}
+
+section.pokedexcont img {
+    position: relative;
+    width: 20em;
+    background-color: yellow;
+    border-radius: 100%;
+    z-index: 1;
+
+}
+
+section.pokedexcont>article h2 {
+    position: relative;
+    margin-bottom: -50px;
+    font-size: 2em;
+    z-index: 2;
+    color: black;
+}

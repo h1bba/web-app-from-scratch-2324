@@ -60,3 +60,65 @@ for (let tool of data) {
 
 // TUTORIAL voor de logica: https://www.youtube.com/watch?v=f4D50VnO_Gw&t=609s
 
+const searchButton = document.getElementById("searchbutton");
+const pokemonInput = document.getElementById("pokemoninput");
+const pokemonCont = document.getElementById("pokemoncont");
+
+searchButton.addEventListener( "click" , ()=>{
+    const pokemonName = pokemonInput.value.toLowerCase(); 
+    
+    if (pokemonName) {
+        fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+        .then(response => response.json())
+        .then(data => {
+            displayPokemonData(data);
+        })
+        .catch(error=> {
+            console.error('fetch error', error);
+            pokemonCont.innerHTML = 'error fetching pokemon'
+        });
+    
+    } else {
+        pokemonCont.innerHTML = 'Zoek een pokemon op'
+    }
+});
+
+searchButton.addEventListener('click', performSearch);
+
+pokemonInput.addEventListener('keyup', (event) => {
+    if (event.key === 'Enter') {
+        performSearch();
+    }
+});
+
+function performSearch() {
+    // lowercase om case sensitivity tegen te gaan
+    const pokemonName = pokemonInput.value.toLowerCase();
+    
+    if (pokemonName) {
+        fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+        .then(response => response.json())
+        .then(data => {
+            displayPokemonData(data);
+        })
+        .catch(error=> {
+            console.error('fetch error', error);
+            pokemonCont.innerHTML = 'error fetching pokemon'
+        });
+    } else {
+        pokemonCont.innerHTML = 'Zoek een pokemon op'
+    }
+}
+
+function  displayPokemonData(pokemonData){
+    const capitalizedPokemonName = pokemonData.name.charAt(0).toUpperCase() + pokemonData.name.slice(1);
+
+    pokemonCont.innerHTML = `
+    <h2>${pokemonData.name}</h2>
+    <img src="${pokemonData.sprites.front_default}" alt="${pokemonData.name}">
+    <p>Height: ${pokemonData.height}</p>
+    <p>Weight: ${pokemonData.weight}</p>
+    <p>Types: ${pokemonData.types.map(type => type.type.name).join(', ')}</p>
+`;
+}
+
