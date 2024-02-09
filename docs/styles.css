@@ -64,17 +64,26 @@ section.duizendpoot h2 {
     margin: 0;
 }
 
+header {
+    display: flex;
+}
+
 header ul {
     display: flex;
+    position: relative;
     gap: 1em;
 }
 
-section.hero, section.duizendpoot, section.quotecontainer {
+section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont {
     margin-bottom: 1em;
 }
 
 section.quotecontainer>img {
     width: 12rem;
+    animation: flip-globe ease-out;
+    animation-timeline: view();
+    animation-range-start: 30%;
+    animation-range-end: 70%;
 }
 
 section.quotecontainer>p {
@@ -149,8 +158,11 @@ section.pokedexcont>button {
 }
 
 section.pokedexcont {
+    animation: fade-in linear;
+    animation-timeline: scroll();
     background-color: red;
 }
+
 
 section.pokedexcont img {
     position: relative;
@@ -167,4 +179,52 @@ section.pokedexcont>article h2 {
     font-size: 2em;
     z-index: 2;
     color: black;
+}
+
+button.hambutton {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* CSS SCROLL DRIVEN ANIMATION: https://www.youtube.com/watch?v=UmzFk68Bwdk */
+/* .scroll-watcher {
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: yellow;
+    width: 100%;
+    transform-origin: left;
+    scale: 0 1; 
+    animation: scroll-watcher linear;
+    animation-timeline: scroll(y);
+}
+
+@animation scroll-watcher {
+    to {
+        scale: 1 1;
+    }
+} */
+
+@keyframes fade-in {
+    from {
+        scale .4;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes flip-globe {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 180deg;
+    }
 }

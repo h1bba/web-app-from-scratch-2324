@@ -1,3 +1,9 @@
+// navLinks = document.querySelectorAll('.navlink');
+// hamButton = document.querySelector('hambutton')
+// hamButton.addEventListener("click", hideNav) ()=> {
+//     navLinks.classList.
+// };
+    function hideNav() {}
 // Data fetchen
 fetch("/data/data.json")
   .then((response) => response.json())
