@@ -111,7 +111,7 @@ function performSearch() {
 }
 
 function  displayPokemonData(pokemonData){
-    const capitalizedPokemonName = pokemonData.name.charAt(0).toUpperCase() + pokemonData.name.slice(1);
+    // const capitalizedPokemonName = pokemonData.name.charAt(0).toUpperCase() + pokemonData.name.slice(1);
 
     pokemonCont.innerHTML = `
     <h2>${pokemonData.name}</h2>
