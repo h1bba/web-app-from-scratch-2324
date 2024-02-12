@@ -81,7 +81,7 @@ searchButton.addEventListener( "click" , ()=>{
         })
         .catch(error=> {
             console.error('fetch error', error);
-            pokemonCont.innerHTML = 'error fetching pokemon'
+            pokemonCont.innerHTML = 'De Pokemon kon niet gevonden worden, dubbelcheck de spelling en probeer het opnieuw'
         });
     
     } else {
@@ -109,7 +109,7 @@ function performSearch() {
         })
         .catch(error=> {
             console.error('fetch error', error);
-            pokemonCont.innerHTML = 'error fetching pokemon'
+            pokemonCont.innerHTML = 'De Pokemon kon niet worden gevonden, dubbelcheck de spelling en probeer het opnieuw'
         });
     } else {
         pokemonCont.innerHTML = 'Zoek een pokemon op'

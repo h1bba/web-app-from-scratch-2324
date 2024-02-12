@@ -1,194 +1,258 @@
 :root {
     --var-background-color: #111111;
-}
+    --var-border-color: rgba(255, 255, 255, 0.50);
+    --var-button-background: rgba(255, 255, 255, 0.12);
 
-body {
-    font-size: 16px;
-    background-color: #111111;
-    color: white;
-    font-family: sans-serif;
-}
+    body {
+        font-size: 16px;
+        background-color: var(--var-background-color);
+        color: white;
+        font-family: sans-serif;
+    }
 
-h1, h2, h3, h4 {
-    color: white;
-}
+    h1, h2, h3, h4 {
+        color: white;
+    }
 
-h1 {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 105%;
-    text-align: center;
-    font-family: "Baloo 2", sans-serif;
-}
+    h1 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 105%;
+        text-align: center;
+        font-family: "Baloo 2", sans-serif;
+    }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
+    ul {
+        list-style: none;
+        padding: 0;
+    }
 
-.buttoncontainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 1em;
-}
-
-
-.buttoncontainer>a {
-    display: flex;
-    align-items: center;
-    gap: 0.6em;
-    padding: 0.6em 1.5em 0.6em 1.5em;
-    border: 2px solid rgba(255, 255, 255, 0.50);
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.12);
-}
-
-section.hero>img, section.duizendpoot>img {
-    width: 60vw;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-}
-
-section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont {
-    max-width: 80%;
-    margin: auto;
-    padding: 2em;
-    text-align: center;
-    border: 2px solid rgba(255, 255, 255, 0.50);
-    border-radius: 36px;
-}
-
-section.duizendpoot h2 {
-    margin: 0;
-}
-
-header {
-    display: flex;
-}
-
-header ul {
-    display: flex;
-    position: relative;
-    gap: 1em;
-}
-
-section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont {
-    margin-bottom: 1em;
-}
-
-section.quotecontainer>img {
-    width: 12rem;
-    animation: flip-globe ease-out;
-    animation-timeline: view();
-    animation-range-start: 30%;
-    animation-range-end: 70%;
-}
-
-section.quotecontainer>p {
-    font-size: 32px;
-    margin: 1em 0em 0em 0em;
-}
-
-p.socials {
-    display: flex;
-    gap: 1em;
-    justify-content: center;
-}
-
-p.socials>a {
-    width: 22px;
-    height: 48px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.6em;
-    padding: 0.6em 1.5em 0.6em 1.5em;
-    border: 2px solid rgba(255, 255, 255, 0.50);
-    border-radius: 4em;
-    aspect-ratio: 1/1;
-    background-color: rgba(255, 255, 255, 0.12);
-}
-
-section.duizendpoot h2 {
-    font-size: 24px;
-}
-
-.flex {
-    display: flex;
-}
-
-.skillbox {
-    border: 2px solid rgba(255, 255, 255, 0.50);
-    border-radius: 16px;
-    padding: 1em;
-    display: flex;
-    gap: 2em;
-    margin: 1em;
-}
-
-.skillimg {
-    width: 48px;
-    height: auto;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-}
-
-input {
-    background-color: lightblue;
-    padding: 8px;
-    font-size: 18px;
-}
+    .buttoncontainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1em;
+    }
 
 
-section.pokedexcont>label {
-    display: block;
-    font-size: 16px;
-    padding-bottom: 1em;
-}
+    .buttoncontainer>a {
+        display: flex;
+        align-items: center;
+        gap: 0.6em;
+        padding: 0.6em 1.5em 0.6em 1.5em;
+        border: 2px solid var(--var-border-color);
+        border-radius: 8px;
+        background-color: var(--var-button-background);
+    }
 
-section.pokedexcont>button {
-    font-size: 18px;
-    padding: 8px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    margin-top: 1em;
-}
+    section.hero>img, section.duizendpoot>img {
+        width: 60vw;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-section.pokedexcont {
-    animation: fade-in linear;
-    animation-timeline: scroll();
-    background-color: red;
-}
+    section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect, section.recentwork {
+        max-width: 80%;
+        margin: auto;
+        padding: 2em;
+        text-align: center;
+        border: 2px solid var(--var-border-color);
+        border-radius: 36px;
+    }
+
+    section.duizendpoot h2 {
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+    }
+
+    header ul {
+        display: flex;
+        position: relative;
+        gap: 1em;
+    }
+
+    section.recentwork, section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect {
+        position: relative;
+        margin-bottom: 1em;
+    }
+
+    section.quotecontainer>img {
+        width: 12rem;
+        animation: flip-globe ease-out;
+        animation-timeline: view();
+        animation-range-start: 30%;
+        animation-range-end: 70%;
+    }
+
+    section.quotecontainer>p {
+        font-size: 32px;
+        margin: 1em 0em 0em 0em;
+    }
+
+    p.socials {
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    p.socials>a {
+        width: 22px;
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.6em;
+        padding: 0.6em 1.5em 0.6em 1.5em;
+        border: 2px solid var(--var-border-color);
+        border-radius: 4em;
+        aspect-ratio: 1/1;
+        background-color: var(--var-background-color);
+    }
+
+    section.duizendpoot h2 {
+        font-size: 24px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .skillbox {
+        border: 2px solid var(--var-border-color);
+        border-radius: 16px;
+        padding: 1em;
+        display: flex;
+        gap: 2em;
+        margin: 1em;
+    }
+
+    .skillimg {
+        width: 48px;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+    }
+
+    section.pokedexcont input {
+        background-color: lightblue;
+        padding: 8px;
+        font-size: 18px;
+    }
 
 
-section.pokedexcont img {
-    position: relative;
-    width: 20em;
-    background-color: yellow;
-    border-radius: 100%;
-    z-index: 1;
+    section.pokedexcont>label {
+        display: block;
+        font-size: 16px;
+        padding-bottom: 1em;
+    }
 
-}
+    section.pokedexcont>button {
+        font-size: 18px;
+        padding: 8px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border: 4px solid var(--var-border-color);
+        border-radius: 8px;
+    }
 
-section.pokedexcont>article h2 {
-    position: relative;
-    margin-bottom: -50px;
-    font-size: 2em;
-    z-index: 2;
-    color: black;
-}
-
-button.hambutton {
-    background-color: transparent;
-    border: none;
-}
+    section.pokedexcont {
+        opacity: 0;
+        animation: fade-inscreen linear both;
+        animation-timeline: view();
+        animation-range: 25vh 75vh;
+        background-color: red;
+    }
 
 
-/* CSS SCROLL DRIVEN ANIMATION: https://www.youtube.com/watch?v=UmzFk68Bwdk */
-/* .scroll-watcher {
+    section.pokedexcont img {
+        position: relative;
+        width: 20em;
+        background-color: yellow;
+        border-radius: 100%;
+        z-index: 1;
+
+    }
+
+    section.pokedexcont>article h2 {
+        position: relative;
+        margin-bottom: -50px;
+        font-size: 2em;
+        z-index: 2;
+        color: black;
+    }
+
+    button.hambutton {
+        background-color: transparent;
+        border: none;
+    }
+
+    section.connect form {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    section.connect input, section.connect select, section.connect textarea {
+        color: white;
+        border-radius: 12px;
+        border: 2px solid rgba(255, 255, 255, 0.30);
+        background-color: transparent;
+        display: block;
+        font-size: 18px;
+        padding: 8px 12px;
+        margin-bottom: 10px
+    }
+
+    section.connect option {
+        background-color: #111111;
+        outline: 1px white;
+        border: 2px solid rgba(255, 255, 255, 0.30);
+    }
+
+
+    select#dienst {
+        color: #DBDBDB;
+    }
+
+    section.connect textarea {
+        height: 100px;
+    }
+
+
+    ::placeholder {
+        color: #DBDBDB;
+    }
+
+    section.recentwork>img {
+        height: 100px
+    }
+
+    section.recentwork>h1 {
+        margin-top: 0;
+    }
+
+    section.recentwork>h3, section.recentwork>p {
+        text-align: left;
+    }
+
+
+    section.recentwork>h1>span>img {
+        width: 24px;
+    }
+
+    /* CSS SCROLL DRIVEN ANIMATION: https://www.youtube.com/watch?v=UmzFk68Bwdk */
+    /* .scroll-watcher {
     height: 10px;
     position: fixed;
     top: 0;
@@ -207,24 +271,24 @@ button.hambutton {
     }
 } */
 
-@keyframes fade-in {
-    from {
-        scale .4;
-        opacity: 0;
+    @keyframes fade-inscreen {
+        from {
+            /* scale: 0.4; */
+            opacity: 0;
+        }
+
+        to {
+            /* scale: 1; */
+            opacity: 1;
+        }
     }
 
-    to {
-        scale: 1;
-        opacity: 1;
-    }
-}
+    @keyframes flip-globe {
+        from {
+            rotate: 0deg;
+        }
 
-@keyframes flip-globe {
-    from {
-        rotate: 0deg;
+        to {
+            rotate: 180deg;
+        }
     }
-
-    to {
-        rotate: 180deg;
-    }
-}
