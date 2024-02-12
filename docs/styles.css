@@ -356,7 +356,7 @@
     .gradient9 {
         bottom: -5em;
         text-align: center;
-        background: linear-gradient(143deg, #ff0055 8.37%, rgba(19, 255, 39, 0) 91.49%);
+        background: linear-gradient(143deg, #0077ff 8.37%, rgba(19, 255, 39, 0) 91.49%);
         opacity: .5;
     }
 
