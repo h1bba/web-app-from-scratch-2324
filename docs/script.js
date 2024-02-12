@@ -126,5 +126,6 @@ function  displayPokemonData(pokemonData){
     <p>Weight: ${pokemonData.weight}</p>
     <p>Types: ${pokemonData.types.map(type => type.type.name).join(', ')}</p>
 `;
+// https://www.youtube.com/watch?v=T-VQUKeSU1w&t=1408s
 }
 

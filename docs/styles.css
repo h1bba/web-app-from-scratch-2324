@@ -76,6 +76,7 @@
     }
 
     section.recentwork, section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect {
+        overflow: hidden;
         position: relative;
         margin-bottom: 1em;
     }
@@ -122,6 +123,7 @@
     }
 
     .skillbox {
+        background-color: var(--var-background-color);
         border: 2px solid var(--var-border-color);
         border-radius: 16px;
         padding: 1em;
@@ -163,7 +165,7 @@
     }
 
     section.pokedexcont {
-        opacity: 0;
+        opacity: 1;
         animation: fade-inscreen linear both;
         animation-timeline: view();
         animation-range: 25vh 75vh;
@@ -193,7 +195,12 @@
         border: none;
     }
 
+    section.connect {
+        z-index: 1;
+    }
+
     section.connect form {
+        z-index: 1;
         padding: 1em;
         display: flex;
         flex-direction: column;
@@ -234,8 +241,19 @@
         color: #DBDBDB;
     }
 
+    section.recentwork {
+        padding-bottom: 0;
+    }
+
     section.recentwork>img {
-        height: 100px
+        width: 100%;
+        height: 100%;
+        border-radius: 16px 16px 0px 0px;
+        object-fit: cover;
+        margin-top: 2em;
+        margin-bottom: -2em;
+        padding-top: 0;
+        border: 4px solid var(--var-border-color);
     }
 
     section.recentwork>h1 {
@@ -270,6 +288,77 @@
         scale: 1 1;
     }
 } */
+
+    .gradient, .gradient2, .gradient3, .gradient4, .gradient5, .gradient6, .gradient7, .gradient8, .gradient9 {
+        z-index: -1;
+        position: absolute;
+        width: 20em;
+        height: 20em;
+        border-radius: 100%;
+        filter: blur(100px);
+    }
+
+    .gradient {
+        bottom: -15em;
+        right: 5em;
+        background: linear-gradient(143deg, #00B2FF 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+        opacity: .3;
+    }
+
+    .gradient2 {
+        top: -5em;
+        right: -10em;
+        background: linear-gradient(143deg, #00ff6a 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+        opacity: .5;
+    }
+
+    .gradient3 {
+        bottom: -10em;
+        background: linear-gradient(143deg, #ff00dd 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+        opacity: 1;
+    }
+
+    .gradient4 {
+        bottom: -10em;
+        right: -5em;
+        background: linear-gradient(143deg, #00d9ff 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+        opacity: .5;
+    }
+
+    .gradient5 {
+        bottom: -10em;
+        right: -5em;
+        background: linear-gradient(143deg, #6200ff 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+        opacity: .2;
+    }
+
+    .gradient6 {
+        top: -5em;
+        right: 0em;
+        background: linear-gradient(143deg, #6200ff 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+        opacity: .5;
+    }
+
+    .gradient7 {
+        top: -5em;
+        right: 0em;
+        background: linear-gradient(143deg, #ff6600 8.37%, rgba(19, 255, 39, 0) 91.49%);
+        opacity: .5;
+    }
+
+    .gradient8 {
+        bottom: -5em;
+        right: 5em;
+        background: linear-gradient(143deg, #ff0055 8.37%, rgba(19, 255, 39, 0) 91.49%);
+        opacity: .5;
+    }
+
+    .gradient9 {
+        bottom: -5em;
+        text-align: center;
+        background: linear-gradient(143deg, #ff0055 8.37%, rgba(19, 255, 39, 0) 91.49%);
+        opacity: .5;
+    }
 
     @keyframes fade-inscreen {
         from {
