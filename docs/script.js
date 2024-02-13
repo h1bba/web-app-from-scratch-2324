@@ -3,7 +3,17 @@
 // hamButton.addEventListener("click", hideNav) ()=> {
 //     navLinks.classList.
 // };
-    function hideNav() {}
+
+  
+    const hamButton = document.querySelector('.hambutton');
+    const navMenu = document.getElementById('navmenulinks');
+  
+    if (hamButton && navMenu) {
+      hamButton.addEventListener("click", () => {
+        // console.log("clicked");
+        navMenu.classList.toggle('active');
+      });
+    }
 // Data fetchen
 fetch("/data/data.json")
   .then((response) => response.json())

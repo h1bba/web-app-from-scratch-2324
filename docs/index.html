@@ -1,141 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Minor Web: individueel</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- <div class="scroll-watcher"></div> -->
 
- <!-- Navbar -->
-    <nav>
-        <header>
-            <img class="flex" src="./public/img/Logo Svg.svg" alt="Logo Ufuk Argun Minor Web"/>
-            <ul>
-                <a class="navlink"><li>Connect</li></a>
-                <a class="navlink"><li>Mijn werk</li></a>
-                <a class="navlink"><li>Over mij</li></a>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Minor Web: individueel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- <div class="scroll-watcher"></div> -->
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navmenu">
+            <a class="logo"><img class="flex" src="./public/img/Logo Svg.svg" alt="Logo Ufuk Argun Minor Web" /></a>
+            <button class="hambutton">
+                <img src="./public/img/Hamburger.svg" alt="Open/Close menu" />
+            </button>
+            <ul id="navmenulinks">
+
+                <li><a class="navlink ">Connect</a></li>
+                </a>
+
+                <li><a class="navlink">Mijn werk</a></li>
+                </a>
+
+                <li><a class="navlink">Over mij</a></li>
+                </a>
             </ul>
 
-            <button class="hambutton">
-                <img src="./public/img/Hamburger.svg" alt="Open/Close menu">
-            </button>
-        </header>
-    </nav>
+
+        </nav>
+    </header>
 
     <!-- Hero Content -->
     <section class="hero">
-        <img src="https://i.ibb.co/wJdR4js/Hero-Illustrations.png">
+        <img src="https://i.ibb.co/wJdR4js/Hero-Illustrations.png" />
         <h1>Uw partner voor het digitaal opschalen van uw bedrijf</h1>
-        <p>Creative Studio Hibba helpt bedrijven met
-        resultaatgerichte online oplossingen.</p>
+        <p>
+            Creative Studio Hibba helpt bedrijven met resultaatgerichte online
+            oplossingen.
+        </p>
         <p class="buttoncontainer">
-            <a><img src="./public/img/arrow.svg">Connect</a>
-            <a><img src="./public/img/work.svg">Mijn werk</a>
+            <a><img src="./public/img/arrow.svg" />Connect</a>
+            <a><img src="./public/img/work.svg" />Mijn werk</a>
         </p>
         <div class="gradient4"></div>
     </section>
 
     <!-- Recente werk -->
     <section class="recentwork">
-        <h1>Recente werk <span><img src="./public/img/work.svg"></span></h1>
+        <h1>
+            Recente werk <span><img src="./public/img/work.svg" /></span>
+        </h1>
         <h3>Eureka</h3>
         <p>Online booking systeem voor online examentrainingen</p>
-        <img class="animatie" src="./public/img/Homepage desktop.png">
+        <img class="animatie" src="./public/img/Homepage desktop.png" />
         <div class="gradient3"></div>
     </section>
 
-        <!-- Connect Form -->
-        <section class="connect">
-            <h1>Connect met ons <span><img src="./public/img/connect.svg"></span></h1>
-                <form action="">
-              
-                  <input type="text" id="name" name="firstname" placeholder="Uw volledige naam">
-                  <input type="text" id="bedrijf" name="bedrijf" placeholder="Bedrijf">
-                  <input type="email" id="mail" name="mail" placeholder="E-mail">
-              
-                  <!-- hoe krijg je een placeholder in een select box:
+    <!-- Connect Form -->
+    <section class="connect">
+        <h1>
+            Connect met ons <span><img src="./public/img/connect.svg" /></span>
+        </h1>
+        <form action="">
+            <input type="text" id="name" name="firstname" placeholder="Uw volledige naam" />
+            <input type="text" id="bedrijf" name="bedrijf" placeholder="Bedrijf" />
+            <input type="email" id="mail" name="mail" placeholder="E-mail" />
+
+            <!-- hoe krijg je een placeholder in een select box:
                     https://www.w3docs.com/snippets/css/how-to-create-a-placeholder-for-an-html5-select-box-by-using-only-html-and-css.html#:~:text=Select%20box%20with%20a%20placeholder,-Choose%20a%20drink&text=First%2C%20you%20need%20to%20create,is%20like%20a%20placeholder%20field. -->
-                  <select id="dienst" name="dienst" placeholder="Dienst">
-                    <option value="" disabled selected>Dienst</option>
-                    <option value="website">Website</option>
-                    <option value="brandidentity">Brand Identity</option>
-                    <option value="seo">SEO</option>
-                  </select>
-              
-                  <textarea id="Beschrijving" name="beschrijving" placeholder="Beschrijving"></textarea>
-              
-                  <input type="submit" value="Connect">
-              
-                </form>
-                <!-- form template van w3 schools aangepast:
+            <select id="dienst" name="dienst" placeholder="Dienst">
+                <option value="" disabled selected>
+                    Dienst
+                </option>
+                <option value="website">Website</option>
+                <option value="brandidentity">Brand Identity</option>
+                <option value="seo">SEO</option>
+            </select>
+
+            <textarea id="Beschrijving" name="beschrijving" placeholder="Beschrijving"></textarea>
+
+            <input type="submit" value="Connect" />
+        </form>
+        <!-- form template van w3 schools aangepast:
                 https://www.w3schools.com/howto/howto_css_contact_form.asp -->
-            <div class="gradient"></div>
-            <div class="gradient2"></div>
-
-        </section>
-
-
+        <div class="gradient"></div>
+        <div class="gradient2"></div>
+    </section>
 
     <!-- Duizendpoot -->
 
     <section class="duizendpoot">
         <h1>Ontmoet de duizendpoot</h1>
-        <img src="./public/img/UfukAvatar.png">
+        <img src="./public/img/UfukAvatar.png" />
         <h2 id="naam"></h2>
         <h2 id="age"></h2>
         <h2 id="stad"></h2>
 
-            
         <p class="socials">
-          <a><img src="./public/img/Linkedin.svg" alt="Linkedin"></a>
-          <a><img src="./public/img/Discord.svg" alt="Discord"></a>
-          <a><img src="./public/img/Github.svg" alt="Github"></a>
+            <a><img src="./public/img/Linkedin.svg" alt="Linkedin" /></a>
+            <a><img src="./public/img/Discord.svg" alt="Discord" /></a>
+            <a><img src="./public/img/Github.svg" alt="Github" /></a>
         </p>
         <div class="gradient5"></div>
         <div class="gradient6"></div>
-
     </section>
 
-<section class="skillscontainer">
-    
-    
-    <h2>Tools</h2>
-    <div class="gradient7"></div>
-    <div class="gradient8"></div>
+    <section class="skillscontainer">
+        <h2>Tools</h2>
+        <div class="gradient7"></div>
+        <div class="gradient8"></div>
+    </section>
 
-  </section>
+    <section class="pokedexcont">
+        <h2>Pokedex database</h2>
+        <label for="pokemoninput">Zoek een pokemon op:</label>
+        <input type="text" id="pokemoninput" placeholder="Bijvoorbeeld pikachu" />
+        <button id="searchbutton">zoeken</button>
+        <article id="pokemoncont"></article>
+    </section>
 
-<section class="pokedexcont">
-    <h2>Pokedex database</h2>
-    <label for="pokemoninput">Zoek een pokemon op:</label>
-    <input type="text" id="pokemoninput" placeholder="Bijvoorbeeld pikachu">
-    <button id="searchbutton">zoeken</button>
-    <article id="pokemoncont"></article>
-</section>
-  
-<section class="quotecontainer">
-    <img class="globe" src="./public/img/globe.svg" alt="Aardbol">
-    <p>Samen zetten we de wereld op zijn kop</p>
-    <div class="gradient9"></div>
+    <section class="quotecontainer">
+        <img class="globe" src="./public/img/globe.svg" alt="Aardbol" />
+        <p>Samen zetten we de wereld op zijn kop</p>
+        <div class="gradient9"></div>
+    </section>
 
-  </section>
-  
-  <footer>
-    <h4>Site gemaakt door Ufuk Argün - Minor Web Design & Development.</h4>
-  </footer>
-  
+    <footer>
+        <h4>Site gemaakt door Ufuk Argün - Minor Web Design & Development.</h4>
+    </footer>
 
-<script src="script.js"></script>
-
-
-
+    <script src="script.js"></script>
 </body>
+
 </html>

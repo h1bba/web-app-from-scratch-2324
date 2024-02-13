@@ -4,9 +4,35 @@
     --var-button-background: rgba(255, 255, 255, 0.12);
 }
 
-@media screen and (min-width: 768px) {}
+
 
 @media screen and (min-width: 1px) {}
+
+@media screen and (max-width: 768px) {
+    .navmenu>ul {
+        display: none;
+        transition: 1s ease;
+    }
+
+    .active {
+        transition: 1s ease;
+        display: flex !important;
+        justify-content: center;
+        gap: 2em;
+        width: 100%;
+        flex-direction: row;
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .hambutton {
+        display: flex;
+        position: relative;
+        align-self: center;
+        flex-direction: column;
+        justify-self: end !important;
+    }
+}
 
 body {
     font-size: 16px;
@@ -14,6 +40,11 @@ body {
     color: white;
     font-family: sans-serif;
     transition: 1s ease;
+    margin: 0;
+}
+
+.logo {
+    flex-basis: 50%;
 }
 
 h1, h2, h3, h4 {
@@ -31,6 +62,21 @@ h1 {
 ul {
     list-style: none;
     padding: 0;
+}
+
+.navmenu {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+    border: 2px solid var(--var-border-color);
+    display: flex;
+    width: 85%;
+    border-radius: 36px;
+    margin: auto;
+    position: relative;
+    top: 0.2em;
+    background-color: var(--var-background-color);
+    z-index: 2;
 }
 
 .buttoncontainer {
@@ -51,6 +97,10 @@ ul {
     background-color: var(--var-button-background);
 }
 
+section.hero {
+    margin-top: 1em !important;
+}
+
 section.hero>img, section.duizendpoot>img {
     width: 60vw;
     height: auto;
@@ -61,7 +111,7 @@ section.hero>img, section.duizendpoot>img {
 section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect, section.recentwork {
     overflow: hidden;
     position: relative;
-    max-width: 80%;
+    max-width: 75%;
     margin: auto;
     padding: 2em;
     text-align: center;
@@ -90,10 +140,6 @@ header ul {
 
 section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect, section.recentwork {
     margin-bottom: 1em;
-}
-
-section.quotecontainer {
-    margin-bottom: 10em;
 }
 
 section.quotecontainer>img {
@@ -408,7 +454,6 @@ footer h4 {
 
     to {
         rotate: 180deg;
-        ;
     }
 
 }
