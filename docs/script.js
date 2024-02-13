@@ -129,3 +129,10 @@ function  displayPokemonData(pokemonData){
 // https://www.youtube.com/watch?v=T-VQUKeSU1w&t=1408s
 }
 
+const Globe = document.querySelector('.globe');
+const body = document.body;
+Globe.addEventListener( "click", () => {
+    body.classList.toggle('flipped');
+    
+});
+

@@ -2,18 +2,19 @@
     --var-background-color: #111111;
     --var-border-color: rgba(255, 255, 255, 0.50);
     --var-button-background: rgba(255, 255, 255, 0.12);
-
-    @media screen and (min-width: 768px) {}
-
-    @media screen and (min-width: 1px) {
 }
 
-    body {
-        font-size: 16px;
-        background-color: var(--var-background-color);
-        color: white;
-        font-family: sans-serif;
-    }
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1px) {}
+
+body {
+    font-size: 16px;
+    background-color: var(--var-background-color);
+    color: white;
+    font-family: sans-serif;
+    transition: 1s ease;
+}
 
 h1, h2, h3, h4 {
     color: white;
@@ -58,16 +59,18 @@ section.hero>img, section.duizendpoot>img {
 }
 
 section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect, section.recentwork {
+    overflow: hidden;
+    position: relative;
     max-width: 80%;
     margin: auto;
     padding: 2em;
     text-align: center;
     border: 2px solid var(--var-border-color);
     border-radius: 36px;
-    animation: fade-in linear !important;
-    animation-timeline: view() !important;
-    animation-range-start: -5% !important;
-    animation-range-end: 300px !important;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: 0;
+    animation-range-end: 300px;
 
 }
 
@@ -85,23 +88,18 @@ header ul {
     gap: 1em;
 }
 
-section.recentwork, section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect {
-    overflow: hidden;
-    position: relative;
+section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect, section.recentwork {
     margin-bottom: 1em;
 }
 
 section.quotecontainer {
-    margin-bottom: 40em;
+    margin-bottom: 10em;
 }
 
-section.quotecontainer img {
+section.quotecontainer>img {
     width: 12rem;
     position: relative;
-    animation: flip-globe-animation linear both !important;
-    animation-timeline: view() !important;
-    animation-range-start: entry !important;
-    animation-range-end: 300px !important;
+
 }
 
 section.quotecontainer>p {
@@ -180,10 +178,6 @@ section.pokedexcont>button {
 }
 
 section.pokedexcont {
-    opacity: 1;
-    animation: fade-inscreen linear both;
-    animation-timeline: view();
-    animation-range: 25vh 75vh;
     background-color: red;
 }
 
@@ -191,8 +185,9 @@ section.pokedexcont {
 section.pokedexcont img {
     position: relative;
     width: 20em;
-    background-color: yellow;
-    border-radius: 100%;
+    background-color: rgb(78, 0, 0);
+    border-radius: 16px;
+    border: 2px solid var(--var-border-color);
     z-index: 1;
 
 }
@@ -202,7 +197,7 @@ section.pokedexcont>article h2 {
     margin-bottom: -50px;
     font-size: 2em;
     z-index: 2;
-    color: black;
+    color: white;
 }
 
 button.hambutton {
@@ -248,12 +243,17 @@ select#dienst {
 }
 
 section.connect textarea {
+    font-family: sans-serif;
     height: 100px;
 }
 
 
 ::placeholder {
     color: #DBDBDB;
+}
+
+section.pokedexcont input::placeholder {
+    color: var(--var-background-color);
 }
 
 section.recentwork {
@@ -355,29 +355,9 @@ section.recentwork>h1>span>img {
     opacity: .5;
 }
 
-/* .scroll-watcher {
-    height: 10px;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    background-color: greenyellow;
-    width: 100%;
-    scale: 0 1;
-    animation: scroll-watcher linear;
-    animation-timeline: scroll();
-} */
-
-img.animatie {
-    animation: fade-in linear !important;
-    animation-timeline: view() !important;
-    animation-range-start: -5% !important;
-    animation-range-end: 300px !important;
-
-}
-
 @keyframes fade-in {
     from {
-        scale: 0.8;
+        scale: .8;
         opacity: 0;
     }
 
@@ -387,34 +367,48 @@ img.animatie {
     }
 }
 
-@keyframes flip-globe-animation {
-    from {
-        rotate: 0;
-    }
+img.globe {
+    animation-name: flip-globe;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 
-    to {
-        rotate: 180;
-    }
 
+    /*
+    Deze animatie wilt maar niet werken.
+    animation: flip-globe forwards;
+    animation-timeline: view(10vh);
+    animation-range-start: 0vh;
+    animation-range-end: 300px; */
 }
 
-/* @keyframes flip-globe-animation {
+img.globe:hover {
+    cursor: help;
+}
+
+.flipped {
+    transition: 1s ease;
+    transform: rotate(180deg);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    line-height: 150%;
+}
+
+footer h4 {
+    margin: auto;
+    width: 80%;
+}
+
+@keyframes flip-globe {
     from {
         rotate: 0deg;
     }
 
     to {
         rotate: 180deg;
+        ;
     }
+
 }
-
-@keyframes fade-in {
-    from {
-        scale: .5, opacity: 0;
-    }
-
-    to {
-        scale: 1;
-        opacity: 1;
-    }
-} */
