@@ -1,0 +1,20 @@
+{
+  "firstName": "Ufuk",
+  "LastName": "Argun",
+  "avatar_url": "https://raw.githubusercontent.com/h1bba/web-app-from-scratch-2324/main/docs/public/img/UfukAvatar.png",
+  "age": 20,
+  "city": "Zaandam",
+  "hobbies": ["Designing", "Music production", "Coding", "Gaming"],
+  "truthAndLies": [
+    "My parents are both Turkish",
+    "I was born in Germany",
+    "I've met the sheikh that runs Abu Dhabi through Facetime"
+  ],
+  "bio": "My name is Ufuk(20), I like to design and sell websites, and I aspire to create my own Creative Agency in the future. In my free time I like to play some PC games with some friends.",
+  "favouriteAnimal": "Praying mantis",
+  "socials": {
+    "discord": "https://discord.com/users/165559318639411200",
+    "linkedin": "https://www.linkedin.com/in/ufukargun/",
+    "github": "https://github.com/h1bba"
+  }
+}

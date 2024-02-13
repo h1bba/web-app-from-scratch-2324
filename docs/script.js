@@ -17,9 +17,9 @@ fetch("/data/data.json")
     const userAgeEl = document.getElementById('age');
     const userStadEl = document.getElementById('stad');
 
-    usersNameEl.innerText = users.name;
+    usersNameEl.innerText = users.firstName;
     userAgeEl.innerText = users.age;
-    userStadEl.innerText = users.stad;
+    userStadEl.innerText = users.city;
 
   }
   })
@@ -29,7 +29,7 @@ fetch("/data/data.json")
 fetch("/data/skills.json")
 .then((response) => response.json())
 .then((data) => {
-  console.log(data);
+//   console.log(data);
 
 // Data showcasen
   // voor elke tool van de fetch data (loop)
@@ -122,9 +122,9 @@ function  displayPokemonData(pokemonData){
     pokemonCont.innerHTML = `
     <h2>${pokemonData.name}</h2>
     <img src="${pokemonData.sprites.front_default}" alt="${pokemonData.name}">
-    <p>Height: ${pokemonData.height}</p>
-    <p>Weight: ${pokemonData.weight}</p>
-    <p>Types: ${pokemonData.types.map(type => type.type.name).join(', ')}</p>
+    <p>Height: ${pokemonData.height}0 cm</p>
+    <p>Weight: ${pokemonData.weight}00 grams</p>
+    <p>Types: ${pokemonData.types.map(type => type.type.name).join(', ')} style</p>
 `;
 // https://www.youtube.com/watch?v=T-VQUKeSU1w&t=1408s
 }
