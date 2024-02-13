@@ -61,7 +61,10 @@ section.hero, section.duizendpoot, section.quotecontainer, section.skillscontain
     border: 2px solid var(--var-border-color);
     border-radius: 36px;
     animation: fade-in linear !important;
-    animation-timeline: view(100px 500px) !important;
+    animation-timeline: view() !important;
+    animation-range-start: -5% !important;
+    animation-range-end: 300px !important;
+
 }
 
 section.duizendpoot h2 {
@@ -91,10 +94,10 @@ section.quotecontainer {
 section.quotecontainer img {
     width: 12rem;
     position: relative;
-    animation: flip-globe-animation linear both;
-    animation-timeline: view();
-    animation-range-start: 70%;
-    animation-range-end: 30%;
+    animation: flip-globe-animation linear both !important;
+    animation-timeline: view() !important;
+    animation-range-start: entry !important;
+    animation-range-end: 300px !important;
 }
 
 section.quotecontainer>p {
@@ -348,15 +351,7 @@ section.recentwork>h1>span>img {
     opacity: .5;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-        section.quotecontainer img {
-            animation: flip-globe-animation linear both;
-            animation-timeline: view();
-            animation-range: 0vh 50vh;
-        }
-    } */
-
-.scroll-watcher {
+/* .scroll-watcher {
     height: 10px;
     position: fixed;
     top: 0;
@@ -366,14 +361,37 @@ section.recentwork>h1>span>img {
     scale: 0 1;
     animation: scroll-watcher linear;
     animation-timeline: scroll();
+} */
+
+img.animatie {
+    animation: fade-in linear !important;
+    animation-timeline: view() !important;
+    animation-range-start: -5% !important;
+    animation-range-end: 300px !important;
+
 }
 
-
-
-@keyframes .scroll-watcher {
-    to {
-        scale: 1 1;
+@keyframes fade-in {
+    from {
+        scale: 0.8;
+        opacity: 0;
     }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes flip-globe-animation {
+    from {
+        rotate: 0;
+    }
+
+    to {
+        rotate: 180;
+    }
+
 }
 
 /* @keyframes flip-globe-animation {
