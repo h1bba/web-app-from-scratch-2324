@@ -122,9 +122,9 @@ function  displayPokemonData(pokemonData){
     pokemonCont.innerHTML = `
     <h2>${pokemonData.name}</h2>
     <img src="${pokemonData.sprites.front_default}" alt="${pokemonData.name}">
-    <p>Height: ${pokemonData.height}</p>
-    <p>Weight: ${pokemonData.weight}</p>
-    <p>Types: ${pokemonData.types.map(type => type.type.name).join(', ')}</p>
+    <p>Height: ${pokemonData.height}0 cm</p>
+    <p>Weight: ${pokemonData.weight}0 grams</p>
+    <p>Types: ${pokemonData.types.map(type => type.type.name).join(', ')} style</p>
 `;
 // https://www.youtube.com/watch?v=T-VQUKeSU1w&t=1408s
 }
