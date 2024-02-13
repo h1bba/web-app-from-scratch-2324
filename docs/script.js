@@ -17,9 +17,9 @@ fetch("/data/data.json")
     const userAgeEl = document.getElementById('age');
     const userStadEl = document.getElementById('stad');
 
-    usersNameEl.innerText = users.name;
+    usersNameEl.innerText = users.firstName;
     userAgeEl.innerText = users.age;
-    userStadEl.innerText = users.stad;
+    userStadEl.innerText = users.city;
 
   }
   })
