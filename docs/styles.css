@@ -6,7 +6,22 @@
 
 
 
-@media screen and (min-width: 1px) {}
+@media screen and (min-width: 1024px) {
+    section.hero {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 60%;
+        max-width: 60%;
+    }
+
+    section.recentwork {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 40%;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .navmenu>ul {
@@ -26,11 +41,11 @@
     }
 
     .hambutton {
-        display: flex;
+        display: flex !important;
         position: relative;
         align-self: center;
         flex-direction: column;
-        justify-self: end !important;
+        justify-self: end;
     }
 }
 
@@ -45,6 +60,10 @@ body {
 
 .logo {
     flex-basis: 50%;
+}
+
+.hambutton {
+    display: none;
 }
 
 h1, h2, h3, h4 {
