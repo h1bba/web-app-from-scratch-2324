@@ -315,6 +315,8 @@ section.recentwork>img {
     margin-bottom: -2em;
     padding-top: 0;
     border: 4px solid var(--var-border-color);
+
+    animation: slide-up 2s forwards;
 }
 
 section.recentwork>h1 {
@@ -456,4 +458,16 @@ footer h4 {
         rotate: 180deg;
     }
 
+}
+
+@keyframes slide-up {
+    from {
+        margin-top: 5em;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 2em;
+        opacity: 1;
+    }
 }
