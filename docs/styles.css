@@ -2,382 +2,397 @@
     --var-background-color: #111111;
     --var-border-color: rgba(255, 255, 255, 0.50);
     --var-button-background: rgba(255, 255, 255, 0.12);
+}
 
-    body {
-        font-size: 16px;
-        background-color: var(--var-background-color);
-        color: white;
-        font-family: sans-serif;
-    }
+body {
+    font-size: 16px;
+    background-color: var(--var-background-color);
+    color: white;
+    font-family: sans-serif;
+}
 
-    h1, h2, h3, h4 {
-        color: white;
-    }
+h1, h2, h3, h4 {
+    color: white;
+}
 
-    h1 {
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 105%;
-        text-align: center;
-        font-family: "Baloo 2", sans-serif;
-    }
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 105%;
+    text-align: center;
+    font-family: "Baloo 2", sans-serif;
+}
 
-    ul {
-        list-style: none;
-        padding: 0;
-    }
+ul {
+    list-style: none;
+    padding: 0;
+}
 
-    .buttoncontainer {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        gap: 1em;
-    }
-
-
-    .buttoncontainer>a {
-        display: flex;
-        align-items: center;
-        gap: 0.6em;
-        padding: 0.6em 1.5em 0.6em 1.5em;
-        border: 2px solid var(--var-border-color);
-        border-radius: 8px;
-        background-color: var(--var-button-background);
-    }
-
-    section.hero>img, section.duizendpoot>img {
-        width: 60vw;
-        height: auto;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect, section.recentwork {
-        max-width: 80%;
-        margin: auto;
-        padding: 2em;
-        text-align: center;
-        border: 2px solid var(--var-border-color);
-        border-radius: 36px;
-    }
-
-    section.duizendpoot h2 {
-        margin: 0;
-    }
-
-    header {
-        display: flex;
-    }
-
-    header ul {
-        display: flex;
-        position: relative;
-        gap: 1em;
-    }
-
-    section.recentwork, section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect {
-        overflow: hidden;
-        position: relative;
-        margin-bottom: 1em;
-    }
-
-    section.quotecontainer>img {
-        width: 12rem;
-        animation: flip-globe ease-out;
-        animation-timeline: view();
-        animation-range-start: 30%;
-        animation-range-end: 70%;
-    }
-
-    section.quotecontainer>p {
-        font-size: 32px;
-        margin: 1em 0em 0em 0em;
-    }
-
-    p.socials {
-        display: flex;
-        gap: 1em;
-        justify-content: center;
-    }
-
-    p.socials>a {
-        width: 22px;
-        height: 48px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.6em;
-        padding: 0.6em 1.5em 0.6em 1.5em;
-        border: 2px solid var(--var-border-color);
-        border-radius: 4em;
-        aspect-ratio: 1/1;
-        background-color: var(--var-background-color);
-    }
-
-    section.duizendpoot h2 {
-        font-size: 24px;
-    }
-
-    .flex {
-        display: flex;
-    }
-
-    .skillbox {
-        background-color: var(--var-background-color);
-        border: 2px solid var(--var-border-color);
-        border-radius: 16px;
-        padding: 1em;
-        display: flex;
-        gap: 2em;
-        margin: 1em;
-    }
-
-    .skillimg {
-        width: 48px;
-        height: auto;
-        aspect-ratio: 1/1;
-        object-fit: contain;
-    }
-
-    section.pokedexcont input {
-        background-color: lightblue;
-        padding: 8px;
-        font-size: 18px;
-    }
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+}
 
 
-    section.pokedexcont>label {
-        display: block;
-        font-size: 16px;
-        padding-bottom: 1em;
-    }
+.buttoncontainer>a {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    padding: 0.6em 1.5em 0.6em 1.5em;
+    border: 2px solid var(--var-border-color);
+    border-radius: 8px;
+    background-color: var(--var-button-background);
+}
 
-    section.pokedexcont>button {
-        font-size: 18px;
-        padding: 8px 20px;
-        background-color: black;
-        color: white;
-        border: none;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        border: 4px solid var(--var-border-color);
-        border-radius: 8px;
-    }
+section.hero>img, section.duizendpoot>img {
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
 
-    section.pokedexcont {
-        opacity: 1;
-        animation: fade-inscreen linear both;
-        animation-timeline: view();
-        animation-range: 25vh 75vh;
-        background-color: red;
-    }
+section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect, section.recentwork {
+    max-width: 80%;
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+    border: 2px solid var(--var-border-color);
+    border-radius: 36px;
+    animation: fade-in linear !important;
+    animation-timeline: view(100px 500px) !important;
+}
 
+section.duizendpoot h2 {
+    margin: 0;
+}
 
-    section.pokedexcont img {
-        position: relative;
-        width: 20em;
-        background-color: yellow;
-        border-radius: 100%;
-        z-index: 1;
+header {
+    display: flex;
+}
 
-    }
+header ul {
+    display: flex;
+    position: relative;
+    gap: 1em;
+}
 
-    section.pokedexcont>article h2 {
-        position: relative;
-        margin-bottom: -50px;
-        font-size: 2em;
-        z-index: 2;
-        color: black;
-    }
+section.recentwork, section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1em;
+}
 
-    button.hambutton {
-        background-color: transparent;
-        border: none;
-    }
+section.quotecontainer {
+    margin-bottom: 40em;
+}
 
-    section.connect {
-        z-index: 1;
-    }
+section.quotecontainer img {
+    width: 12rem;
+    position: relative;
+    animation: flip-globe-animation linear both;
+    animation-timeline: view();
+    animation-range-start: 70%;
+    animation-range-end: 30%;
+}
 
-    section.connect form {
-        z-index: 1;
-        padding: 1em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        margin: 0 auto;
-        text-align: center;
-    }
+section.quotecontainer>p {
+    font-size: 32px;
+    margin: 1em 0em 0em 0em;
+}
 
-    section.connect input, section.connect select, section.connect textarea {
-        color: white;
-        border-radius: 12px;
-        border: 2px solid rgba(255, 255, 255, 0.30);
-        background-color: transparent;
-        display: block;
-        font-size: 18px;
-        padding: 8px 12px;
-        margin-bottom: 10px
-    }
+p.socials {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
 
-    section.connect option {
-        background-color: #111111;
-        outline: 1px white;
-        border: 2px solid rgba(255, 255, 255, 0.30);
-    }
+p.socials>a {
+    width: 22px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6em;
+    padding: 0.6em 1.5em 0.6em 1.5em;
+    border: 2px solid var(--var-border-color);
+    border-radius: 4em;
+    aspect-ratio: 1/1;
+    background-color: var(--var-background-color);
+}
 
+section.duizendpoot h2 {
+    font-size: 24px;
+}
 
-    select#dienst {
-        color: #DBDBDB;
-    }
+.flex {
+    display: flex;
+}
 
-    section.connect textarea {
-        height: 100px;
-    }
+.skillbox {
+    background-color: var(--var-background-color);
+    border: 2px solid var(--var-border-color);
+    border-radius: 16px;
+    padding: 1em;
+    display: flex;
+    gap: 2em;
+    margin: 1em;
+}
 
+.skillimg {
+    width: 48px;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
 
-    ::placeholder {
-        color: #DBDBDB;
-    }
-
-    section.recentwork {
-        padding-bottom: 0;
-    }
-
-    section.recentwork>img {
-        width: 100%;
-        height: 100%;
-        border-radius: 16px 16px 0px 0px;
-        object-fit: cover;
-        margin-top: 2em;
-        margin-bottom: -2em;
-        padding-top: 0;
-        border: 4px solid var(--var-border-color);
-    }
-
-    section.recentwork>h1 {
-        margin-top: 0;
-    }
-
-    section.recentwork>h3, section.recentwork>p {
-        text-align: left;
-    }
+section.pokedexcont input {
+    background-color: lightblue;
+    padding: 8px;
+    font-size: 18px;
+}
 
 
-    section.recentwork>h1>span>img {
-        width: 24px;
-    }
+section.pokedexcont>label {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 1em;
+}
 
-    /* CSS SCROLL DRIVEN ANIMATION: https://www.youtube.com/watch?v=UmzFk68Bwdk */
-    /* .scroll-watcher {
+section.pokedexcont>button {
+    font-size: 18px;
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 4px solid var(--var-border-color);
+    border-radius: 8px;
+}
+
+section.pokedexcont {
+    opacity: 1;
+    animation: fade-inscreen linear both;
+    animation-timeline: view();
+    animation-range: 25vh 75vh;
+    background-color: red;
+}
+
+
+section.pokedexcont img {
+    position: relative;
+    width: 20em;
+    background-color: yellow;
+    border-radius: 100%;
+    z-index: 1;
+
+}
+
+section.pokedexcont>article h2 {
+    position: relative;
+    margin-bottom: -50px;
+    font-size: 2em;
+    z-index: 2;
+    color: black;
+}
+
+button.hambutton {
+    background-color: transparent;
+    border: none;
+}
+
+section.connect {
+    z-index: 1;
+}
+
+section.connect form {
+    z-index: 1;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.connect input, section.connect select, section.connect textarea {
+    color: white;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.30);
+    background-color: transparent;
+    display: block;
+    font-size: 18px;
+    padding: 8px 12px;
+    margin-bottom: 10px
+}
+
+section.connect option {
+    background-color: #111111;
+    outline: 1px white;
+    border: 2px solid rgba(255, 255, 255, 0.30);
+}
+
+
+select#dienst {
+    color: #DBDBDB;
+}
+
+section.connect textarea {
+    height: 100px;
+}
+
+
+::placeholder {
+    color: #DBDBDB;
+}
+
+section.recentwork {
+    padding-bottom: 0;
+}
+
+section.recentwork>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+    margin-top: 2em;
+    margin-bottom: -2em;
+    padding-top: 0;
+    border: 4px solid var(--var-border-color);
+}
+
+section.recentwork>h1 {
+    margin-top: 0;
+}
+
+section.recentwork>h3, section.recentwork>p {
+    text-align: left;
+}
+
+
+section.recentwork>h1>span>img {
+    width: 24px;
+}
+
+.gradient, .gradient2, .gradient3, .gradient4, .gradient5, .gradient6, .gradient7, .gradient8, .gradient9 {
+    z-index: -1;
+    position: absolute;
+    width: 20em;
+    height: 20em;
+    border-radius: 100%;
+    filter: blur(100px);
+}
+
+.gradient {
+    bottom: -15em;
+    right: 5em;
+    background: linear-gradient(143deg, #00B2FF 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+    opacity: .3;
+}
+
+.gradient2 {
+    top: -5em;
+    right: -10em;
+    background: linear-gradient(143deg, #00ff6a 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+    opacity: .5;
+}
+
+.gradient3 {
+    bottom: -10em;
+    background: linear-gradient(143deg, #ff00dd 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+    opacity: 1;
+}
+
+.gradient4 {
+    bottom: -10em;
+    right: -5em;
+    background: linear-gradient(143deg, #00d9ff 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+    opacity: .5;
+}
+
+.gradient5 {
+    bottom: -10em;
+    right: -5em;
+    background: linear-gradient(143deg, #6200ff 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+    opacity: .2;
+}
+
+.gradient6 {
+    top: -5em;
+    right: 0em;
+    background: linear-gradient(143deg, #6200ff 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+    opacity: .5;
+}
+
+.gradient7 {
+    top: -5em;
+    right: 0em;
+    background: linear-gradient(143deg, #ff6600 8.37%, rgba(19, 255, 39, 0) 91.49%);
+    opacity: .5;
+}
+
+.gradient8 {
+    bottom: -5em;
+    right: 5em;
+    background: linear-gradient(143deg, #ff0055 8.37%, rgba(19, 255, 39, 0) 91.49%);
+    opacity: .5;
+}
+
+.gradient9 {
+    bottom: -5em;
+    text-align: center;
+    background: linear-gradient(143deg, #0077ff 8.37%, rgba(19, 255, 39, 0) 91.49%);
+    opacity: .5;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+        section.quotecontainer img {
+            animation: flip-globe-animation linear both;
+            animation-timeline: view();
+            animation-range: 0vh 50vh;
+        }
+    } */
+
+.scroll-watcher {
     height: 10px;
     position: fixed;
     top: 0;
-    z-index: 5;
-    background-color: yellow;
+    z-index: 3;
+    background-color: greenyellow;
     width: 100%;
-    transform-origin: left;
-    scale: 0 1; 
+    scale: 0 1;
     animation: scroll-watcher linear;
-    animation-timeline: scroll(y);
+    animation-timeline: scroll();
 }
 
-@animation scroll-watcher {
+
+
+@keyframes .scroll-watcher {
     to {
         scale: 1 1;
     }
-} */
+}
 
-    .gradient, .gradient2, .gradient3, .gradient4, .gradient5, .gradient6, .gradient7, .gradient8, .gradient9 {
-        z-index: -1;
-        position: absolute;
-        width: 20em;
-        height: 20em;
-        border-radius: 100%;
-        filter: blur(100px);
+/* @keyframes flip-globe-animation {
+    from {
+        rotate: 0deg;
     }
 
-    .gradient {
-        bottom: -15em;
-        right: 5em;
-        background: linear-gradient(143deg, #00B2FF 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
-        opacity: .3;
+    to {
+        rotate: 180deg;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        scale: .5, opacity: 0;
     }
 
-    .gradient2 {
-        top: -5em;
-        right: -10em;
-        background: linear-gradient(143deg, #00ff6a 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
-        opacity: .5;
-    }
-
-    .gradient3 {
-        bottom: -10em;
-        background: linear-gradient(143deg, #ff00dd 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
+    to {
+        scale: 1;
         opacity: 1;
     }
-
-    .gradient4 {
-        bottom: -10em;
-        right: -5em;
-        background: linear-gradient(143deg, #00d9ff 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
-        opacity: .5;
-    }
-
-    .gradient5 {
-        bottom: -10em;
-        right: -5em;
-        background: linear-gradient(143deg, #6200ff 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
-        opacity: .2;
-    }
-
-    .gradient6 {
-        top: -5em;
-        right: 0em;
-        background: linear-gradient(143deg, #6200ff 8.37%, rgba(255, 62, 19, 0.00) 91.49%);
-        opacity: .5;
-    }
-
-    .gradient7 {
-        top: -5em;
-        right: 0em;
-        background: linear-gradient(143deg, #ff6600 8.37%, rgba(19, 255, 39, 0) 91.49%);
-        opacity: .5;
-    }
-
-    .gradient8 {
-        bottom: -5em;
-        right: 5em;
-        background: linear-gradient(143deg, #ff0055 8.37%, rgba(19, 255, 39, 0) 91.49%);
-        opacity: .5;
-    }
-
-    .gradient9 {
-        bottom: -5em;
-        text-align: center;
-        background: linear-gradient(143deg, #0077ff 8.37%, rgba(19, 255, 39, 0) 91.49%);
-        opacity: .5;
-    }
-
-    @keyframes fade-inscreen {
-        from {
-            /* scale: 0.4; */
-            opacity: 0;
-        }
-
-        to {
-            /* scale: 1; */
-            opacity: 1;
-        }
-    }
-
-    @keyframes flip-globe {
-        from {
-            rotate: 0deg;
-        }
-
-        to {
-            rotate: 180deg;
-        }
-    }
+} */
