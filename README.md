@@ -6,7 +6,6 @@ Welcome to one of my future (hopefully) agency websites. Within this site you ca
 
 Design Mockup:
 ![dekstop UI](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/46adf734-61e5-48e7-9916-31723cbe1e28)
-
 ![Mobile](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/10af4553-069b-4a2e-b4b8-939f994306fa)
 
 I had created a UI Design before I started attending this minor, hence why I already had a good idea what my site was going to be about.
@@ -45,15 +44,23 @@ This is what it looks like on the website:
 
 ![Tools](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/050359d1-e796-420e-b253-2ba719872d75)
 
+### PokeAPI V2 (Extern)
+https://pokeapi.co/
+
+
 After this I felt like I hadn't challenged myself so i tried to use an external API. After some research I've had come across PokeAPI V2.
 I didn't want to set up a NodeJS server but soon found out that almost all API's have private key's which you need a .env file for.
 So PokeAPI it is!
 
-https://pokeapi.co/
 
 ![JS PokeAPI](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/965b112d-1839-40f9-bb6f-68ac47c4da73)
 
 ![JS PokeAPI](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/5cf68bef-2293-4cf9-a594-fa7bc2d29c6d)
+
+I've had followed a tutorial to achieve my desired requirements.
+This is how it turned out on the site:
+
+![Pokedex](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/83b01760-8471-4f55-b751-79d1ed19ff05) ![Pokedex IRL](https://img.decrypt.co/insecure/rs:fit:3840:0:0:0/plain/https://cdn.decrypt.co/wp-content/uploads/2024/02/pokedex-chatgpt1-gID_7.png@webp)
 
 
 
