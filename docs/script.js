@@ -8,7 +8,7 @@
     const hamButton = document.querySelector('.hambutton');
     const navMenu = document.getElementById('navmenulinks');
   
-    if (hamButton && navMenu) {
+    if (hamButton) {
       hamButton.addEventListener("click", () => {
         // console.log("clicked");
         navMenu.classList.toggle('active');
