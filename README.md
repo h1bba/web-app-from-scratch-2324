@@ -1,70 +1,64 @@
 # Web App From Scratch @cmda-minor-web 2023 - 2024
 
-In dit vak gaan we een web applicatie bouwen en leren hoe deze werken door zo min mogelijk libraries, frameworks of
-andere bronnen te importen (vanilla) en zoveel mogelijk het browser platform te gebruiken door middel van HTML, CSS &
-JavaScript.    
-Het eindresultaat is een modulaire, single page web app (SPA), beoordeeld op jouw niveau en eigen leerdoelen.    
-De bedoeling is om een web app te bouwen die data ophaalt van een externe API, deze manipuleert om te tonen in de UI van
-de App, hoe abstract dan ook.
-Je gaat bekende patterns leren toe passen bij het bouwen en testen van de applicatie voor een eigen "WebSite" en een
-gezamenlijke "Team App".
-Nog nooit heb je zo snel kunnen prototypen als nadat je hebt leren werken met de browser en haar talen.
-Daarnaast zal je tijdloze kennis opdoen over het de aard en het gebruik van data, datastructuren, algoritmes, libraries,
-frameworks en de werking van het web.
+## Website Agency Ufuk
 
-## Assignment
-1. Bouw je eigen SPA/WebSite met externe data van een API, minimaal 1 micro interactie.
-2. Een TeamApp met een verzameling van alle losse websites van je teamleden
+Welcome to one of my future (hopefully) agency websites. Within this site you can find a hero section, some information about me, recent projects (coming soon), the tools I use, a connect form, a pokedex and finally a cool interactive CTA section
 
----
+Design Mockup:
+![dekstop UI](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/46adf734-61e5-48e7-9916-31723cbe1e28)
 
-## Program
+![Mobile](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/10af4553-069b-4a2e-b4b8-939f994306fa)
 
-| Planning | Maandag               | Dinsdag                | Woensdag                           | Donderdag                   | Vrijdag                                   |
-|----------|-----------------------|------------------------|------------------------------------|-----------------------------|-------------------------------------------|
-|          | Kick-Off, Dev WebSite | Dev TeamApp, Workshops | Dev *, Weekly nerd                 | Dev *, Workshops            | Code review, Voortgangsgesprekken, Dev *  |
-|          | Dev *, Workshops      | College + Workshops    | Dev *, Weekly nerd, Deadline 23:59 | Mondeling, Weekly Nerd Blog | Reparatiegesprekken, Afsluiting, 🍻 Fest? |
+I had created a UI Design before I started attending this minor, hence why I already had a good idea what my site was going to be about.
+I had to make some adjustment to the design to fit it with the requirements of the instructions. For example the pokedex was not intended at first, but because fetching external data is a requirement the pokedex found it's way in the website. 
 
-## Rubric
+## API Data
+I'm fetching data from **3** separate places.
+### data.json (local)
+The first data fetch is my info. I dynamically display this data at certain places in my site.
 
-Je inzet wordt beoordeeld met behulp van de rubric (zie hieronder). Je moet het criterium (middenkolom) behalen om het
-vak te voltooien.
-Tijdens de toets wordt je mondeling overhoord en krijg je feedback over dingen die we denken dat tekort schieten en dingen die
-we denken dat een verbetering zijn op het criterium.
+![data.json](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/eb27db10-415c-4099-b658-f6bf195ebe5c)
 
-TBA
+This is just a local JSON file with some JSON data about myself.
+This is the code in the JS file to fetch the data. As you can see were putting firstName, age and city into an html element.
 
-[//]: # ()
-[//]: # (| Deficiency | Criterion                                                                                                                                                                              | Improvement |)
+![js data](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/72ee95c2-ece6-4cb9-b630-1294bde513aa)
 
-[//]: # (|:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------|)
+This is how it looks on the website
 
-[//]: # (|            | *User Interface* - you design, build and test the user interface by applying interface design principles                                                                               |             |)
+![data display](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/268429ff-0746-47f6-8fb6-06526004c1c6)
 
-[//]: # (|            | *Code structure* - you write modular, consistent and efficient HTML, CSS and JavaScript code by applying structure and best practices. You manage state for the application and the UI |             |)
+### tools.json (local)
+The second data fetching is for the Tools section.
+I've never before fetched an image and put it in html, so I wanted to try that out.
+This is what the skills.json looks like:
 
-[//]: # (|            | *Data management* - you understand how you can work with an external API using asynchronous code. You can retrieve data, manipulate and dynamically convert it to structured html      |             |)
+![skills.json](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/e15e900d-91bf-49c7-b1cb-c0a83d43c05d)
 
-[//]: # (|            | *Project* - your app is working and published on GitHub Pages. Your project is thoroughly documented in the `README.md` file in your repository.                                       |             |)
+As you can see it is simply a name combined with an image.
 
-## Procesverslag
+![JS skills](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/0846f01a-72aa-4391-9d0e-377310484697)
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+This is what the JS looks like, i've added comments to make it easier to understand,
 
-<!-- ☝️ replace this description with a description of your own work -->
+This is what it looks like on the website:
 
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
+![Tools](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/050359d1-e796-420e-b253-2ba719872d75)
 
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
+After this I felt like I hadn't challenged myself so i tried to use an external API. After some research I've had come across PokeAPI V2.
+I didn't want to set up a NodeJS server but soon found out that almost all API's have private key's which you need a .env file for.
+So PokeAPI it is!
 
-<!-- Maybe a table of contents here? 📚 -->
+https://pokeapi.co/
 
-<!-- How about a section that describes how to install this project? 🤓 -->
+![JS PokeAPI](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/965b112d-1839-40f9-bb6f-68ac47c4da73)
 
-<!-- ...but how does one use this project? What are its features 🤔 -->
+![JS PokeAPI](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/5cf68bef-2293-4cf9-a594-fa7bc2d29c6d)
 
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
 
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+
+## Features
+
+## Interesting pieces
+
