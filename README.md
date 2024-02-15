@@ -54,7 +54,6 @@ So PokeAPI it is!
 
 
 ![JS PokeAPI](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/965b112d-1839-40f9-bb6f-68ac47c4da73)
-
 ![JS PokeAPI](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/5cf68bef-2293-4cf9-a594-fa7bc2d29c6d)
 
 I've had followed a tutorial to achieve my desired requirements. (https://www.youtube.com/watch?v=T-VQUKeSU1w&t=1409s)
@@ -66,33 +65,76 @@ This is how it turned out on the site:
 
 ### Hero section
 There is not much functionality here, the buttons do not link through (because we're supposed to make 1 page)
+
 ![Hero](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/8a793404-98de-4bd4-8da7-ba5f2aa2a9ba)
 
 ### Recent work section
 I used a screenshot of a site im currently building to display some recent work i've made, there is a fade-in animation separate on the image too.
+
 ![Recent work](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/2a5397fc-5609-4fa8-b2cc-793a4bef3c94)
 
-### Meet me
+### Meet me section
 The meet me section fetches data from a json to fill in the H2's this data is also used to display my data on the team website.
+
 ![duizendpoot](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/af89f855-481f-4a87-a1eb-5f10dee2a634)
 ![code duizendpoot](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/c64abee4-5479-4ada-84a6-cf69f2c3d877)
 
 
-### Tools
+### Tools section
 This section fetches data from a JSON file, including the image string. These are displayed dynamically on the website.
+
 ![Tools](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/934215f2-bd9c-403d-beb3-c5c8e2869c0a)
 ![code tools](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/2dfd308c-c3c3-4acd-a09f-2efd9899c7b1)
 
-### Connect
+### Connect section
 For the connect section I've created a form with some simple fields, the email can easily be sent by using an external email service provider (example: https://formsubmit.co/)
 I didn't make the form sendable because I didn't want to get spammed by bots.
+
 ![form](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/10d97709-0cc8-4937-877b-ef161e493a74)
 
-### Pokedex
+### Pokedex section
 The pokedex uses PokeAPI V2, this is an (external data) API, You can search up any pokemon in the database and see the details like height, weight and energy style of the pokemon.
+
 ![pokedex](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/1a3b608b-96bb-4496-b755-1203f1c0e490)
 ![cdode pokedex 1](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/3001a52b-d421-4949-a6df-859fc608ebe1)
 ![code pokedex 2](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/ff103262-f6c6-4aa2-b4af-b285707fb67b)
+
+### Quote/CTA section
+The Quote section has text that says "Samen zetten we de wereld op zijn kop", translated this means: "Together we will turn the world upside down".
+![Quote](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/b95aa5c9-bbc0-42cf-8ba1-741c148b8fc1)
+
+The globe has a CSS animation, to keep spinning itself.
+
+![css animation](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/f0239709-2da8-46e2-8871-e937aaeb1215)
+
+![css](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/e92224c2-8ce2-44f3-a997-739495c2eb02)
+
+When the globe is clicked, the whole page turns upside down:
+
+![flipped site](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/d782d325-2453-442c-8851-d25b0fbf31a7)
+
+It is easily achieved with toggling a .flipped class to the body
+
+![js flip code](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/375d3c47-fe5c-4a97-bac3-f2728e06d19b)
+
+## Entry animation (Experimental view() usage)
+Google Chrome has a new experimental feature, before we had to use libraries like "intersection observer" or "Motion-Framer". Chrome has implemented scroll driven animation through css, so we do not have to use these libraries anymore and can use vanilla JS and CSS to get the same results.
+
+For my own project I've implemented a fade-in animation for the sections:
+
+![Css](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/73e7dd25-4e4b-4535-800d-56b79a912971)
+
+![Css animation](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/4c367169-c55a-4e8b-a5a2-fe8374e2a6d7)
+
+I've achieved a scroll-driven reveal animation:
+
+![Scroll hidden](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/33c0fcd4-0894-41ba-8ff6-bc24dd04727a)
+
+![Scroll reveal](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/6e7fb2e3-0596-432c-bf93-4765c2feca2c)
+
+
+
+
 
 
 
