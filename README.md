@@ -101,6 +101,7 @@ The pokedex uses PokeAPI V2, this is an (external data) API, You can search up a
 
 ### Quote/CTA section
 The Quote section has text that says "Samen zetten we de wereld op zijn kop", translated this means: "Together we will turn the world upside down".
+
 ![Quote](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/b95aa5c9-bbc0-42cf-8ba1-741c148b8fc1)
 
 The globe has a CSS animation, to keep spinning itself.
