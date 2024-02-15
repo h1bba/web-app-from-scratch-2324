@@ -142,3 +142,8 @@ I've achieved a scroll-driven reveal animation:
 ![Scroll hidden](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/33c0fcd4-0894-41ba-8ff6-bc24dd04727a)
 
 ![Scroll reveal](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/6e7fb2e3-0596-432c-bf93-4765c2feca2c)
+
+# Result: 
+
+![result desktop](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/05598933-a83e-43da-a1e7-ec3f65624b7b)
+
