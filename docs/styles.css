@@ -93,6 +93,7 @@
     }
 
     section.hero, section.duizendpoot, section.quotecontainer, section.skillscontainer, section.pokedexcont, section.connect, section.recentwork {
+        transition: 1s ease;
         overflow: hidden;
         position: relative;
         max-width: 75%;
@@ -370,7 +371,15 @@
         display: flex;
         flex-direction: column;
         padding: 4em;
+        justify-content: center;
+    }
+
+    section.quotecontainer {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
         align-items: center;
+        justify-content: center;
     }
 
     section.hero>img {
