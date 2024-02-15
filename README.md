@@ -1,4 +1,4 @@
-# Web App From Scratch @cmda-minor-web 2023 - 2024
+# Web App From Scratch (@cmda-minor-web 2023 - 2024)
 
 ## Website Agency Ufuk
 
@@ -57,15 +57,45 @@ So PokeAPI it is!
 
 ![JS PokeAPI](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/5cf68bef-2293-4cf9-a594-fa7bc2d29c6d)
 
-I've had followed a tutorial to achieve my desired requirements.
+I've had followed a tutorial to achieve my desired requirements. (https://www.youtube.com/watch?v=T-VQUKeSU1w&t=1409s)
 This is how it turned out on the site:
 
 ![Pokedex](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/83b01760-8471-4f55-b751-79d1ed19ff05) ![Pokedex IRL](https://img.decrypt.co/insecure/rs:fit:3840:0:0:0/plain/https://cdn.decrypt.co/wp-content/uploads/2024/02/pokedex-chatgpt1-gID_7.png@webp)
 
+## Features/Sections
+
+### Hero section
+There is not much functionality here, the buttons do not link through (because we're supposed to make 1 page)
+![Hero](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/8a793404-98de-4bd4-8da7-ba5f2aa2a9ba)
+
+### Recent work section
+I used a screenshot of a site im currently building to display some recent work i've made, there is a fade-in animation separate on the image too.
+![Recent work](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/2a5397fc-5609-4fa8-b2cc-793a4bef3c94)
+
+### Meet me
+The meet me section fetches data from a json to fill in the H2's this data is also used to display my data on the team website.
+![duizendpoot](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/af89f855-481f-4a87-a1eb-5f10dee2a634)
+![code duizendpoot](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/c64abee4-5479-4ada-84a6-cf69f2c3d877)
+
+
+### Tools
+This section fetches data from a JSON file, including the image string. These are displayed dynamically on the website.
+![Tools](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/934215f2-bd9c-403d-beb3-c5c8e2869c0a)
+![code tools](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/2dfd308c-c3c3-4acd-a09f-2efd9899c7b1)
+
+### Connect
+For the connect section I've created a form with some simple fields, the email can easily be sent by using an external email service provider (example: https://formsubmit.co/)
+I didn't make the form sendable because I didn't want to get spammed by bots.
+![form](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/10d97709-0cc8-4937-877b-ef161e493a74)
+
+### Pokedex
+The pokedex uses PokeAPI V2, this is an (external data) API, You can search up any pokemon in the database and see the details like height, weight and energy style of the pokemon.
+![pokedex](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/1a3b608b-96bb-4496-b755-1203f1c0e490)
+![cdode pokedex 1](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/3001a52b-d421-4949-a6df-859fc608ebe1)
+![code pokedex 2](https://github.com/h1bba/web-app-from-scratch-2324/assets/60386159/ff103262-f6c6-4aa2-b4af-b285707fb67b)
 
 
 
-## Features
 
-## Interesting pieces
+
 
